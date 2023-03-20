@@ -4,6 +4,11 @@
       <option value="branch1">Inasal</option>
       <option value="branch2">Al rigga</option>
     </select>
+    <select @change="onSelect">
+      <option value="">Select Branch</option>
+      <option value="branch1">Inasal</option>
+      <option value="branch2">Al rigga</option>
+    </select>
   </template>
   
 <script>
