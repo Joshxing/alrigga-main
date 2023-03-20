@@ -3,10 +3,10 @@ import mysql from "mysql2";
 // create the connection to database
 
 const db = mysql.createConnection({
-    host: "http://localhost:8081/",
-    user: "root",
-    password: "",
-    database: "db_restaurant"
+    host: process.env.DB_DOMAIN,
+    user: process.env.DB_USER,
+    password: process.env.DB_PWD,
+    database: process.env.DB_DEFAULT_SCHEMA,
 });
 
 
