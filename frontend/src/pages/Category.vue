@@ -44,11 +44,11 @@
     methods: {
     async submitForm() {
       const data = {
-        name: this.name,
-        description: this.description,
-        price: this.price,
-        number: this.number,
-        imageUrl: this.imageUrl,
+        name: form.name,
+        description: form.description,
+        price: form.price,
+        number: form.number,
+        imageUrl: form.imageUrl,
       }
       const response = await fetch('/api/foods', {
         method: 'POST',
@@ -57,11 +57,11 @@
       })
       if (response.ok) {
         alert('Food item added successfully!')
-        this.name = ''
-        this.description = ''
-        this.price = ''
-        this.number = ''
-        this.imageUrl = ''
+        form.name = ''
+        form.description = ''
+        form.price = ''
+        form.number = ''
+        form.imageUrl = ''
       } else {
         alert('Error adding food item')
       }
