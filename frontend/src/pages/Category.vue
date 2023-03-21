@@ -50,7 +50,7 @@
         number: this.number,
         imageUrl: this.imageUrl,
       }
-      const response = await fetch('/api/food', {
+      const response = await fetch('/api/foods', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
