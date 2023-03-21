@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     fetchFoodItems() {
-      axios.get('/api/food-items')
+      axios.get('/api/foods')
         .then(response => {
           this.foodItems = response.data;
         })
@@ -56,7 +56,7 @@ export default {
         });
     },
     addFoodItem() {
-      axios.post('/api/food-items', {
+      axios.post('/api/foods', {
         name: this.name,
         description: this.description,
         price: this.price,
