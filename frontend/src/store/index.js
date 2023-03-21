@@ -22,7 +22,7 @@ const store = createStore({
     },
     actions: {
         async getFoodsData(context){
-            await axios.get('/food')
+            await axios.get('/foods')
             .then(function (response) {
                 context.commit("setFoodsData", response.data);
             })
