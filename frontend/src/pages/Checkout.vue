@@ -270,10 +270,10 @@ export default {
 
         isPaid: function () {
             if (this.checkoutObj.paymentMethod == "cash") {
-                return "false"
+                return "Cash on delivery"
             }
             else if (this.checkoutObj.paymentMethod == "card") {
-                return "true"
+                return "Card"
             }
         },
 
