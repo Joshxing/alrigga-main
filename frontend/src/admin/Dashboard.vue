@@ -34,7 +34,7 @@
                         <td>{{ b.bill_address }}</td>
                         <td>{{ b.bill_when }}</td>
                         <td>{{ b.bill_paid }}</td>
-                        <td>${{ b.bill_total }}</td>
+                        <td>د.إ{{ b.bill_total }}</td>
                         <td>{{ avaiableStatus[b.bill_status] }}</td>
                         <td>
                             <button v-if="b.bill_status < 5" class="action-btn" @click="nextStatusBtn(b.bill_id)">
