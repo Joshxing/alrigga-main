@@ -59,8 +59,8 @@
         <div class="bottom">
 
             <div class="share">
-                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/alriggarestaurant" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/alriggarestaurant?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
             </div>
 
         </div>
