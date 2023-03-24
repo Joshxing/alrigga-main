@@ -72,7 +72,7 @@
                                         </div>
 
                                         <div class="cal-total col-sm-2">
-                                            <h4 class="item-total">${{
+                                            <h4 class="item-total">د.إ{{
                                                     calculateItemPrice(index)
                                             }}
                                             </h4>
