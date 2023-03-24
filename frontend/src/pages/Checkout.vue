@@ -4,7 +4,7 @@
             <form id="checkoutForm" @submit="handleSubmit" novalidate autocomplete="off">
                 <div class="checkout-heading">
                     <h3>Few more step to place your order<span>Total</span></h3>
-                    <h3 v-if="user">{{ user.user_name }}'s Order<span>${{ calculateSummaryPrice()[3] }}</span></h3>
+                    <h3 v-if="user">{{ user.user_name }}'s Order<span>د.إ{{ calculateSummaryPrice()[3] }}</span></h3>
                 </div>
 
                 <div class="form-group details-group">
