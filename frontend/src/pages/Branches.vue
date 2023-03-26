@@ -1,14 +1,14 @@
 <template>
-  <div class="select-wrapper">
-    <select @change="onSelect">
+  <div>
+    <select v-model="selectedBranch" @change="redirectToLocation">
       <option value="">Select Branch</option>
       <option value="branch1">Inasal</option>
       <option value="branch2">Al rigga</option>
     </select>
-    <ul class="options">
-      <li v-if="selectedBranch === 'branch1'">Inasal</li>
-      <li v-if="selectedBranch === 'branch2'">Riqqa AI Buteen Plaza - 8 5A Street - Deira - Dubai</li>
-    </ul>
+    <select v-if="selectedBranch === 'branch2'" v-model="selectedLocation" @change="redirectToSelectedLocation">
+      <option value="">Select Location</option>
+      <option value="location">Riqqa AI Buteen Plaza - 8 5A Street - Deira - Dubai</option>
+    </select>
   </div>
 </template>
 
@@ -16,16 +16,19 @@
 export default {
   data() {
     return {
-      selectedBranch: "",
+      selectedBranch: '',
+      selectedLocation: '',
     };
   },
   methods: {
-    onSelect(event) {
-      this.selectedBranch = event.target.value;
-      if (this.selectedBranch === "branch1") {
-        window.location.href = "https://phrestaurantfrontend.vercel.app";
-      } else if (this.selectedBranch === "branch2") {
-        window.location.href = "/menu";
+    redirectToLocation() {
+      if (this.selectedBranch === 'branch1') {
+        window.location.href = '#';
+      }
+    },
+    redirectToSelectedLocation() {
+      if (this.selectedLocation === 'location') {
+        window.location.href = '#';
       }
     },
   },
@@ -33,40 +36,15 @@ export default {
 </script>
 
 <style>
-.select-wrapper {
-  position: relative;
-}
-
 select {
   background-color: #fff;
   border: none;
   color: #333;
+  font-size: 12px;
+  padding: 8px;
+}
+
+option {
   font-size: 16px;
-  padding: 8px;
-  width: 150px;
-}
-
-.options {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: none;
-}
-
-.select-wrapper:hover .options {
-  display: block;
-}
-
-.options li {
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
-
-.options li:hover {
-  background-color: #f5f5f5;
 }
 </style>
