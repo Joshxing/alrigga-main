@@ -92,31 +92,29 @@
                         <input type="button" id="allFilterFoodBtn" name="allFilterFoodBtn" value="all"
                             class="menu-tab-item" @click="filterFoodBtn($event)" />
                         <input type="button" id="sinangagFilterFoodBtn" name="sinangagFilterFoodBtn" class="menu-tab-item"
-                            value="sinangag" @click="filterFoodBtn($event)" />
+                            value="SINANGAG" @click="filterFoodBtn($event)" />
                         <input type="button" id="pritoFilterFoodBtn" name="pritoFilterFoodBtn" class="menu-tab-item"
-                            value="prito" @click="filterFoodBtn($event)" />
+                            value="PRITO" @click="filterFoodBtn($event)" />
                         <input type="button" id="ihaw-ihawFilterFoodBtn" name="ihaw-ihawFilterFoodBtn" class="menu-tab-item"
-                            value="ihaw-ihaw" @click="filterFoodBtn($event)" />
+                            value="IHAW-IHAW" @click="filterFoodBtn($event)" />
                         <input type="button" id="panghimagasFilterFoodBtn" name="panghimagasFilterFoodBtn" class="menu-tab-item"
-                            value="panghimagas" @click="filterFoodBtn($event)" />
-                        <input type="button" id="combomealFilterFoodBtn" name="combomealFilterFoodBtn" class="menu-tab-item"
-                            value="combomeal" @click="filterFoodBtn($event)" />
+                            value="PANGHIMAGAS" @click="filterFoodBtn($event)" />
                         <input type="button" id="samalamigFilterFoodBtn" name="samalamigFilterFoodBtn" class="menu-tab-item"
-                            value="samalamig" @click="filterFoodBtn($event)" />
+                            value="SAMALAMIG" @click="filterFoodBtn($event)" />
                         <input type="button" id="pampaganaFilterFoodBtn" name="pampaganaFilterFoodBtn" class="menu-tab-item"
-                            value="pampagana" @click="filterFoodBtn($event)" />
+                            value="PAMPAGANA" @click="filterFoodBtn($event)" />
                         <input type="button" id="sabawFilterFoodBtn" name="sabawFilterFoodBtn" class="menu-tab-item"
-                            value="sabaw" @click="filterFoodBtn($event)" /> 
+                            value="SABAW" @click="filterFoodBtn($event)" /> 
                         <input type="button" id="umuusokFilterFoodBtn" name="umuusokFilterFoodBtn" class="menu-tab-item"
-                            value="umuusok" @click="filterFoodBtn($event)" /> 
+                            value="UMUUSOK" @click="filterFoodBtn($event)" /> 
                         <input type="button" id="pansitanFilterFoodBtn" name="pansitanFilterFoodBtn" class="menu-tab-item"
-                            value="pansitan" @click="filterFoodBtn($event)" />  
+                            value="PANSITAN" @click="filterFoodBtn($event)" />  
                         <input type="button" id="balayspecialFilterFoodBtn" name="silogFilterFoodBtn" class="menu-tab-item"
-                            value="balayspecial" @click="filterFoodBtn($event)" />
+                            value="BALAYSPECIAL" @click="filterFoodBtn($event)" />
                         <input type="button" id="silogFilterFoodBtn" name="silogFilterFoodBtn" class="menu-tab-item"
-                            value="silog" @click="filterFoodBtn($event)" />
+                            value="SILOG" @click="filterFoodBtn($event)" />
                         <input type="button" id="lugawFilterFoodBtn" name="lugawFilterFoodBtn" class="menu-tab-item"
-                            value="lugaw" @click="filterFoodBtn($event)" />
+                            value="LUGAW" @click="filterFoodBtn($event)" />
                     </div>
                 </div>
 
