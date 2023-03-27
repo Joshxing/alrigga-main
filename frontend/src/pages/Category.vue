@@ -110,7 +110,7 @@
   }
   
   button[type="submit"] {
-    display: block;
+    display: block
     margin-top: 20px;
   }
   </style>
