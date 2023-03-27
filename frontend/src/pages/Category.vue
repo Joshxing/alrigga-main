@@ -49,7 +49,7 @@
         description: this.description,
         price: this.price,
         number: this.number,
-        imageUrl: this.imageUrl,
+        image: this.image,
       }
       const response = await fetch('/api/foods', {
         method: 'POST',
@@ -62,7 +62,7 @@
         this.description = ''
         this.price = ''
         this.number = ''
-        this.imageUrl = ''
+        this.image = ''
       } else {
         alert('Error adding food item')
       }
